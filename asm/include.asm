@@ -1,0 +1,3 @@
+%define VGABUF 0xB8000
+
+%define PAGE_SIZE 4096
