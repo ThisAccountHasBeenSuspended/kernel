@@ -22,16 +22,17 @@ Enter build environment:
 - Windows (PowerShell): `docker run --rm -it -v "${pwd}:/root/env" kernel-buildenv`
 
 ### Commands
-Build kernel:
+Build all:
 `make`
 
 Remove all build files:
 `make clean`
 
-To leave the build environment, enter `exit`.
+Leave the build environment:
+`exit`
 
 ## Emulate
-You can emulate this kernel with [Qemu](https://www.qemu.org/) and:
+You can emulate this kernel with [QEMU](https://www.qemu.org/) and the following console command:
 `qemu-system-x86_64 -drive format=raw,file=build/kernel.iso`
 
 ## Cleanup

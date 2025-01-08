@@ -14,7 +14,8 @@ struct VgaTmodeInfo info = {
 };
 static unsigned char current_scheme = 0;
 
-void vga_tmode_scheme(unsigned char fg, unsigned char bg) {
+void vga_tmode_scheme(unsigned char fg, unsigned char bg)
+{
     current_scheme = fg | bg << 4;
 }
 
@@ -87,7 +88,8 @@ static void write(char c)
     }
 }
 
-void vga_tmode_print(const char* const str) {
+void vga_tmode_print(const char* const str)
+{
     const unsigned int str_len = strlen(str);
     for (unsigned int i = 0; i < str_len; i++)
     {
@@ -95,7 +97,8 @@ void vga_tmode_print(const char* const str) {
     }
 }
 
-void vga_tmode_clear() {
+void vga_tmode_clear()
+{
     for (unsigned int y = 0; y < VGA_HEIGHT; y++)
     {
         for (unsigned int x = 0; x < VGA_WIDTH; x++)

@@ -21,7 +21,8 @@ enum VgaTmodeColor
     VGA_TMODE_WHITE         = 15
 };
 
-struct VgaTmodeInfo {
+struct VgaTmodeInfo
+{
     unsigned int col, row;
 };
 
